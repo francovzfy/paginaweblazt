@@ -337,5 +337,99 @@ footer {
     .card {
         padding: 35px;
     }
+/* STUDIO SECTION */
 
+.studio-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.gear-grid {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
+    gap: 25px;
+}
+
+.gear-box {
+    background: rgba(255,255,255,0.03);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    transition: 0.4s ease;
+
+    backdrop-filter: blur(10px);
+}
+
+.gear-box:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(183, 0, 255, 0.4);
+
+    box-shadow:
+        0 0 30px rgba(140, 0, 255, 0.15);
+}
+
+.gear-box h3 {
+    margin-bottom: 15px;
+
+    font-size: 1.1rem;
+}
+
+.gear-box p {
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.gear-box span {
+    color: rgba(255,255,255,0.65);
+
+    line-height: 1.7;
+
+    font-size: 0.95rem;
+}
+
+.studio-btn {
+    margin-top: 40px;
+
+    padding: 18px 32px;
+
+    border: none;
+
+    border-radius: 999px;
+
+    background: linear-gradient(90deg, #6e2cff, #ff3ec9);
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    box-shadow:
+        0 0 35px rgba(174, 0, 255, 0.35);
+}
+
+.studio-btn:hover {
+    transform: scale(1.05);
+}
+
+#studio-message {
+    margin-top: 25px;
+
+    color: rgba(255,255,255,0.75);
+
+    line-height: 1.8;
+}
 }
